@@ -1,0 +1,232 @@
+.progress-bar{
+    -webkit-appearance: none;
+    appearance: none;
+    width: calc(100% - 10px);
+    height: 0.4rem;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+}
+
+.progress-bar::-webkit-progress-value{
+    background-color: #69cbb1;
+}
+.progress-bar::-webkit-progress-bar{
+    background-color: rgb(61, 61, 61);
+}
+
+.guns-info{
+    height: 65vh;
+    width: 21rem;
+    background-color: rgba(175, 175, 175, 0.4);
+    font-family: "ff_fontMark";
+}
+
+.guns-info .title{
+    display: flex;
+    flex-direction: column;
+    background: rgba(20, 196, 166, 0.35);
+    height: 2.3rem;  
+    font-size: larger;  
+    justify-content: flex-end;
+    border-bottom: 1px solid white;
+    font-family: "ff_fontMark-bold";
+}
+
+.guns-info .title>div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.guns-info .title>div .mr-auto{
+    margin-right: auto;
+}
+.guns-info .title>div .l-title{
+    font-family: "ff_fontMark";
+    font-size: medium;
+}
+
+.guns-info .title>hr{
+    position: relative;
+    top: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: calc(100% - 20px);
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.guns-info .sub-title{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(204, 224, 222, 0.35);
+    height: 1.5rem;
+    border-bottom: 1px solid white;
+    justify-content: flex-end;
+}
+
+.guns-info .sub-title>hr{
+    position: relative;
+    top: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: calc(100% - 20px);
+    color: rgb(204, 204, 204);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+}
+
+.guns-info .sub-title>div{
+    display: flex;
+    flex-direction: row;   
+}
+
+.sub-title-info{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.sub-title-info>span{
+    margin-right: auto;
+
+}
+
+.sub-title-info>div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.damage-info{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+}
+
+.damage-info>span{
+    margin-right: auto;
+}
+.damage-info>div{
+    display: grid;
+    width: 14.8rem;
+    gap: 0.5rem;
+
+}
+
+.damage-info>div>span{
+    text-align: center;
+    height: 100%;
+    font-size: smaller;
+    font-family: "ff_fontMark-thin";
+    font-weight: 700;
+    border-bottom: 1px white solid;
+}
+
+.guns-wrapper{
+    display: grid;
+    width: 100%;
+    height: 18rem;
+    grid-template-columns: calc((100% - 1.5rem)/2) calc((100% - 1.5rem)/2);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    gap: 0.5rem;
+}
+
+
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(219, 223, 222, 0.2);
+    align-items: center;
+}
+
+.info-box>div{
+    text-align: center;
+    width: 100%;
+    background-color: rgba(219, 223, 222, 0.3);
+    font-family: "ff_fontMark-thin";
+    font-weight: bolder;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.info-box .value{
+    padding-top: 2px;
+    
+    margin-bottom: 0px;
+    font-size:x-large;
+}
+
+.info-box .sig{
+    margin-top: 0px;
+    font-family: "ff_fontMark-thin";
+    font-weight: 900;
+    font-size:smaller;
+    margin-bottom: 3px;
+}
+
+.damage-box{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    gap: 0.5rem;
+}
+
+.damage-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - 1rem);
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    
+    background-color: rgba(219, 223, 222, 0.2);
+}
+
+.damage-type{
+    font-size: small;
+    margin-right: auto;
+    color: #69cbb1;
+    opacity: 0.9;
+    width: 39px;
+}
+
+.damage-value{
+    display: grid;
+    width: 14.8rem;
+    gap: 0.6rem;
+}
+
+.damage-value>span{
+    text-align: center;
+    width: 100%;
+    font-size:x-large;
+    
+}
+
+.damage-value .t1{
+    opacity: 1;
+}
+
+.damage-value .t2{
+    opacity: 0.9;
+}
+
+.damage-value .t3{
+    opacity: 0.6;
+}

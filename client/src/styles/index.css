@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "ff_fontMark";
+    src: url('../public/font/FONT/FontFont_FF.Mark.Pro.Medium.otf');
+}
+
+@font-face {
+    font-family: "ff_fontMark-thin";
+    src: url('../public/font/FONT/FontFont_FF.Mark.Pro.Thin.Italic.otf');
+}
+
+@font-face {
+    font-family: "ff_fontMark-bold";
+    src: url('../public/font/FONT/FontFont_FF.Mark.Pro.Bold.otf');
+}
+
+*{
+    color: white; 
+}
+.background{
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;   
+    background-image: url("../public/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-2{
+    gap: 2rem;
+}
+
+.gap-1{
+    gap: 1rem;
+}
+
+.gap-03{
+    gap: 5px;
+}
+
+.h-2{
+    height: 3rem;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 58vh;
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
+
+.col-split{
+    height: calc(50%);
+}
+
+.smaller-col{
+    width: 9rem;
+}
+
+.small-col{
+    width: 13rem;
+}
+
+.medium-col{
+    width: 15.5rem;
+}
+
+.large-col{
+    width: 18.5rem;
+}
+
+
+
+
+
+.type-title{
+    display: flex;
+    flex-direction: column;
+    background: rgba(20, 196, 166, 0.35);
+    height: 1.4rem;  
+    text-align: center;
+    font-size: small;  
+    justify-content: flex-end;
+    border-bottom: 1px solid white;
+    font-family: "ff_fontMark";
+}
+
+.type-title>p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+}
+
+.type-title>hr{
+    position: relative;
+    top: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: calc(100% - 20px);
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+
+
+
+.box-gun{
+    background-color: rgba(175, 175, 175, 0.4);
+    border: 2px solid rgba(0,0,0,0);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 150ms;
+}
+
+.box-gun:focus{
+    background-color: rgba(18, 212, 180, 0.3);
+    border: 2px solid rgb(18, 212, 180);
+}
+
+.box-gun:hover{
+    background-color: rgba(18, 212, 180, 0.3);
+    
+}
+
+.box-gun .image-s{
+    width: 130%;
+    transform: scaleX(-1);
+}
+
+.box-gun .image-m{
+    width: 80%;
+    transform: scaleX(-1);
+}
+
+.box-gun .image-l{
+    width: 60%;
+    transform: scaleX(-1);
+}
+
+.weapon-tag{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: small;  
+    justify-content: left;
+    align-items: flex-start;
+    font-family: "ff_fontMark";
+}
+
+.weapon-tag .name{
+    opacity: 0.7;
+}
+
+
+
+.b-small{
+    height: calc((100% - 1.4rem - 30px)/5);
+}
+
+.b-medium{
+    height: calc((100% - 1.4rem - 15px)/2);
+}
+
+.b-large{
+    height: calc((100% - 1.4rem - 25px)/4);
+}
+
+.b-larger{
+    height: calc((100% - 1.4rem - 15px)/2);
+}
+
