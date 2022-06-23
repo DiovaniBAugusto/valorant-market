@@ -14,12 +14,13 @@ import {GunsInfo} from './components/interface/GunsInfo'
 
 function App() {
   const [gunInFocus, setGunInFocus] = useState(weaponsInfo[weaponsMap.CLASSIC])
-  const bg = document.getElementById("bg");
-  const market = document.getElementById("market");
+  
 
 
 
   document.addEventListener("keydown",(e)=>{
+    const bg = document.getElementById("bg");
+    const market = document.getElementById("market");
     if(e.key === "b"){
       bg.style.filter = "blur(4px)";
       market.style.display= "flex";
